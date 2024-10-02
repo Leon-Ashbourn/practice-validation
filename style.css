@@ -22,13 +22,15 @@ body {
 
 form {
     position: absolute;
-    top: 10vh;
-    left: 20vw;
+    top: 20vh;
+    left: 28vw;
     display: flex;
     flex-direction: column;
     border: 2px solid black;
+    border-radius: 24px;
+    box-shadow: 0 0 10px black;
     padding: 2vw;
-    width: 60vw;
+    width: 50vw;
     align-items: center;
 }
 form > div:not(div:first-child) {
@@ -56,8 +58,8 @@ label {
     font-size: 1.2rem;
     font-weight: 700;
 }
-input .error:required {
-    border: 2px solid red;
+input.error:required {
+    border: 2px solid red !important;
 }
 input:valid:required {
     border: 2px solid green;
@@ -76,4 +78,9 @@ input[type='submit'] {
     font-weight: 700;
     color: var(--button-color);
     background-color: var(--button-background);
+}
+label>p {
+    font-size: 0.7rem;
+    color: red;
+    font-weight: 500;
 }
